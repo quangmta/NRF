@@ -112,23 +112,9 @@ int main(void)
   NRF24_ini();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  NRF24L01_RX_Mode();
-  //NRF24L01_RX_Mode();
+  NRF24L01_RX_Mode(); 
   while (1)
   {
-//	  if (isDataAvailable(2) == 1)
-//	  {
-//		  flag=1;
-//		  NRF24_Receive(RxData);
-//		  HAL_UART_Transmit(&huart1, RxData, strlen((char *)RxData), 1000);
-//	  }
-//	  else flag=0;
-    /* USER CODE BEGIN 3 */
-//	  fifostatus = NRF24_ReadReg(FIFO_STATUS);
-//	  flag=NRF24L01_Send(TxData);
-//	  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-//	  fifostatus = NRF24_ReadReg(FIFO_STATUS);
-//	  HAL_Delay(1000);
 	  IRQ_Callback();
   }
   /* USER CODE END 3 */
